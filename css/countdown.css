@@ -1,0 +1,96 @@
+/*====================================================
+
+    Wedding Invitation Premium
+    Countdown V2
+
+=====================================================*/
+
+#countdown {
+  padding: 120px 20px;
+
+  background: #f9fdff;
+}
+
+.countdown-wrapper {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+
+  margin-top: 70px;
+}
+
+.time-box {
+  background: white;
+
+  padding: 40px 20px;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+
+  transition: 0.35s;
+}
+
+.time-box:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 25px 50px rgba(127, 198, 243, 0.2);
+}
+
+.time-box h3 {
+  font-size: 60px;
+
+  color: var(--title);
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.time-box span {
+  display: block;
+
+  margin-top: 12px;
+
+  font-size: 16px;
+
+  color: var(--text);
+}
+@media (max-width: 768px) {
+  .countdown-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-wrapper {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+  }
+
+  .time-box {
+    padding: 28px 10px;
+  }
+
+  .time-box h3 {
+    font-size: 42px;
+  }
+}
+#countdown {
+  padding: 90px 20px;
+}
+
+#countdown .section-title {
+  margin-bottom: 15px;
+}
+
+#countdown .section-desc {
+  max-width: 500px;
+
+  margin: auto;
+
+  line-height: 1.8;
+}

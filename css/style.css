@@ -1,0 +1,280 @@
+/*====================================================
+
+    Wedding Invitation Premium
+    Version : 1.5
+    File    : style.css
+
+=====================================================*/
+
+/*==========================================
+        GOOGLE RESET
+==========================================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*==========================================
+        ROOT
+==========================================*/
+
+:root {
+  /*========== COLOR ==========*/
+
+  --primary: #f8fcff;
+  --secondary: #eef8fd;
+  --accent: #a9ddfc;
+
+  --title: #44637c;
+  --text: #667f92;
+
+  --white: #ffffff;
+
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+
+  --shadow-hover: 0 28px 55px rgba(0, 0, 0, 0.12);
+
+  --radius: 30px;
+
+  --transition: 0.35s ease;
+}
+
+/*==========================================
+        HTML
+==========================================*/
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*==========================================
+        BODY
+==========================================*/
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: var(--primary);
+
+  color: var(--text);
+
+  overflow-x: hidden;
+
+  max-width: 100%;
+
+  line-height: 1.7;
+}
+html.lock,
+body.lock {
+  overflow: hidden;
+
+  height: 100vh;
+
+  touch-action: none;
+}
+
+/*==========================================
+        IMAGE
+==========================================*/
+
+img {
+  max-width: 100%;
+
+  display: block;
+}
+
+/*==========================================
+        LINK
+==========================================*/
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+/*==========================================
+        CONTAINER
+==========================================*/
+
+.container {
+  width: min(1100px, 92%);
+
+  margin: auto;
+}
+
+/*==========================================
+        SECTION
+==========================================*/
+
+section {
+  padding: 140px 20px;
+}
+
+/*==========================================
+        DESIGN SYSTEM
+==========================================*/
+
+.section-subtitle {
+  text-align: center;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  color: #7db7df;
+
+  font-size: 15px;
+
+  margin-bottom: 18px;
+}
+
+.section-title {
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 60px;
+
+  color: var(--title);
+
+  font-weight: 600;
+}
+
+.section-desc {
+  max-width: 720px;
+
+  margin: 30px auto 90px;
+
+  text-align: center;
+
+  line-height: 2;
+
+  color: var(--text);
+}
+
+/*==========================================
+        CARD
+==========================================*/
+
+.card {
+  background: var(--white);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-hover);
+}
+
+/*==========================================
+        BUTTON
+==========================================*/
+
+.btn-primary {
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 18px 36px;
+
+  border: none;
+
+  border-radius: 100px;
+
+  background: linear-gradient(135deg, #a9ddfc, #7fc6f3);
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  box-shadow: 0 15px 35px rgba(127, 198, 243, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 20px 45px rgba(127, 198, 243, 0.4);
+}
+
+/*==========================================
+        DIVIDER
+==========================================*/
+
+.divider {
+  width: 120px;
+
+  height: 2px;
+
+  margin: 40px auto;
+
+  border-radius: 100px;
+
+  background: #9fd4f6;
+}
+
+/*==========================================
+        GLASS
+==========================================*/
+
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/*==========================================
+        SCROLLBAR
+==========================================*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #edf7fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a9ddfc;
+
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8bcdf3;
+}
+/*==========================================
+        LAYER
+==========================================*/
+
+#cover {
+  z-index: 9998;
+}
+
+#bottomNav {
+  z-index: 9999;
+}

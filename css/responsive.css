@@ -1,0 +1,57 @@
+/*====================================================
+
+    Wedding Invitation Premium
+    File : responsive.css
+    Version : 2.0
+
+=====================================================*/
+
+/*==========================================
+        TABLET
+==========================================*/
+
+@media (max-width: 992px) {
+  .container {
+    width: 92%;
+  }
+
+  .groom,
+  .bride {
+    font-size: 82px;
+  }
+
+  .section-title {
+    font-size: 54px;
+  }
+
+  .photo-frame {
+    width: 320px;
+
+    height: 450px;
+  }
+
+  .couple-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .couple-divider {
+    flex-direction: row;
+  }
+
+  .couple-divider::before,
+  .couple-divider::after {
+    width: 90px;
+
+    height: 2px;
+  }
+
+  .countdown-wrapper {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+  }
+}

@@ -1,0 +1,464 @@
+/*====================================================
+
+        Wedding Invitation Premium
+        Cover V3
+
+=====================================================*/
+
+/*==========================================
+        ROOT
+==========================================*/
+
+:root {
+  --primary: #eaf8ff;
+  --secondary: #dcf4ff;
+  --accent: #a9ddfc;
+
+  --title: #44637c;
+  --text: #5e788d;
+
+  --white: #ffffff;
+}
+
+/*==========================================
+        VIDEO
+==========================================*/
+
+.bg-video {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -3;
+}
+
+/*==========================================
+        OVERLAY
+==========================================*/
+
+.overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.84),
+    rgba(234, 248, 255, 0.82),
+    rgba(255, 255, 255, 0.86)
+  );
+
+  backdrop-filter: blur(4px);
+
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: opacity 0.8s ease;
+
+  z-index: -2;
+}
+
+.overlay.hide {
+  opacity: 0.25;
+}
+
+/*==========================================
+        COVER
+==========================================*/
+
+#cover {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  z-index: 9998;
+
+  transition:
+    transform 0.9s ease,
+    opacity 0.9s ease;
+}
+
+/*==========================================
+        COVER CONTENT
+==========================================*/
+
+.cover-content {
+  width: 100%;
+
+  max-width: 720px;
+
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
+}
+
+/*==========================================
+        OPEN ANIMATION
+==========================================*/
+
+#cover.hide {
+  transform: translateY(-100%);
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+#cover.hide .cover-content {
+  transform: translateY(-50px);
+
+  opacity: 0;
+}
+
+/*==========================================
+        BISMILLAH
+==========================================*/
+
+.bismillah {
+  font-size: 56px;
+
+  color: var(--title);
+
+  margin-bottom: 22px;
+}
+
+/*==========================================
+        SUBTITLE
+==========================================*/
+
+.subtitle {
+  font-size: 18px;
+
+  letter-spacing: 8px;
+
+  color: #78b7e7;
+
+  margin-bottom: 28px;
+
+  text-transform: uppercase;
+}
+
+/*==========================================
+        NAMA
+==========================================*/
+
+.groom,
+.bride {
+  font-family: "Great Vibes", cursive;
+
+  font-size: 108px;
+
+  font-weight: 400;
+
+  color: var(--title);
+
+  line-height: 1.1;
+}
+
+.ampersand {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 55px;
+
+  color: #7ec6f3;
+
+  margin: 10px 0;
+}
+
+.fullname {
+  margin-top: 15px;
+
+  font-size: 17px;
+
+  color: var(--text);
+}
+
+/*==========================================
+        DIVIDER
+==========================================*/
+
+.divider {
+  width: 130px;
+
+  height: 2px;
+
+  margin: 40px auto;
+
+  border-radius: 100px;
+
+  background: #a9ddfc;
+}
+
+/*==========================================
+        DATE
+==========================================*/
+
+.date {
+  margin-top: 10px;
+}
+
+.date p {
+  font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+.date h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 34px;
+
+  color: var(--title);
+}
+
+/*==========================================
+        GUEST
+==========================================*/
+
+.guest {
+  margin-top: 55px;
+}
+
+.guest p {
+  font-size: 17px;
+}
+
+.guest h2 {
+  margin-top: 10px;
+
+  font-size: 42px;
+
+  color: var(--title);
+}
+
+/*==========================================
+        BUTTON
+==========================================*/
+
+#openInvitation {
+  width: 260px;
+
+  height: 62px;
+
+  margin-top: 45px;
+
+  border: none;
+
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #a9ddfc, #7fc6f3);
+
+  box-shadow: 0 18px 40px rgba(127, 198, 243, 0.35);
+
+  transition: 0.35s;
+}
+
+#openInvitation:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 25px 50px rgba(127, 198, 243, 0.45);
+}
+/*==========================================
+        SCROLL INDICATOR
+==========================================*/
+
+.scroll {
+  margin-top: 45px;
+
+  font-size: 15px;
+
+  color: var(--text);
+
+  animation: float 2s ease-in-out infinite;
+}
+
+.scroll i {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 22px;
+}
+
+/*==========================================
+        FLOAT ANIMATION
+==========================================*/
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*==========================================
+        BODY LOCK
+==========================================*/
+
+body.lock {
+  overflow: hidden;
+}
+
+/*==========================================
+        TABLET
+==========================================*/
+
+@media (max-width: 992px) {
+  .cover-content {
+    max-width: 650px;
+  }
+
+  .groom,
+  .bride {
+    font-size: 88px;
+  }
+
+  .guest h2 {
+    font-size: 36px;
+  }
+}
+
+/*==========================================
+        MOBILE
+==========================================*/
+
+@media (max-width: 768px) {
+  #cover {
+    padding: 25px;
+  }
+
+  .bismillah {
+    font-size: 46px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+
+    letter-spacing: 4px;
+  }
+
+  .groom,
+  .bride {
+    font-size: 64px;
+  }
+
+  .ampersand {
+    font-size: 42px;
+  }
+
+  .fullname {
+    font-size: 15px;
+  }
+
+  .divider {
+    width: 100px;
+
+    margin: 30px auto;
+  }
+
+  .date h2 {
+    font-size: 28px;
+  }
+
+  .guest {
+    margin-top: 40px;
+  }
+
+  .guest h2 {
+    font-size: 30px;
+  }
+
+  #openInvitation {
+    width: 220px;
+
+    height: 56px;
+
+    font-size: 16px;
+
+    margin-top: 35px;
+  }
+
+  .scroll {
+    margin-top: 30px;
+  }
+}
+
+/*==========================================
+        SMALL MOBILE
+==========================================*/
+
+@media (max-width: 430px) {
+  .bismillah {
+    font-size: 38px;
+  }
+
+  .groom,
+  .bride {
+    font-size: 52px;
+
+    line-height: 1.15;
+  }
+
+  .ampersand {
+    font-size: 34px;
+  }
+
+  .fullname {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .date h2 {
+    font-size: 24px;
+  }
+
+  .guest h2 {
+    font-size: 26px;
+  }
+
+  #openInvitation {
+    width: 210px;
+
+    height: 52px;
+
+    font-size: 15px;
+  }
+
+  .scroll {
+    font-size: 13px;
+  }
+}

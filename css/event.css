@@ -1,0 +1,143 @@
+/*==========================================
+                EVENT
+==========================================*/
+
+#event {
+  padding: 140px 20px;
+
+  background: linear-gradient(to bottom, #f8fcff, #ffffff);
+}
+
+/*==========================================
+                TITLE
+==========================================*/
+
+.event-subtitle {
+  text-align: center;
+
+  color: #7db7df;
+
+  letter-spacing: 5px;
+
+  text-transform: uppercase;
+}
+
+.event-title {
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 58px;
+
+  color: var(--title);
+
+  margin-top: 15px;
+}
+
+.event-desc {
+  max-width: 650px;
+
+  margin: 30px auto 90px;
+
+  text-align: center;
+
+  line-height: 1.9;
+}
+
+/*==========================================
+                CARD
+==========================================*/
+
+.event-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 35px;
+}
+
+.event-card {
+  width: 360px;
+
+  padding: 45px;
+
+  border-radius: 35px;
+
+  background: white;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+
+  transition: 0.4s;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+/*==========================================
+                ICON
+==========================================*/
+
+.event-circle {
+  width: 90px;
+
+  height: 90px;
+
+  border-radius: 50%;
+
+  background: #eaf8ff;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 42px;
+
+  margin-bottom: 25px;
+}
+
+/*==========================================
+                TEXT
+==========================================*/
+
+.event-card h3 {
+  text-align: center;
+
+  font-family: "Cormorant Garamond", serif;
+
+  color: var(--title);
+
+  font-size: 36px;
+}
+
+.event-line {
+  width: 70px;
+
+  height: 2px;
+
+  background: #8fd0f6;
+
+  margin: 25px auto;
+}
+
+.event-card p {
+  text-align: center;
+
+  line-height: 2;
+}
+
+.event-card h4 {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #69aede;
+
+  font-size: 30px;
+}

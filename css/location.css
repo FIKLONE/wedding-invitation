@@ -1,0 +1,97 @@
+/*==========================================
+            LOCATION
+==========================================*/
+
+#location {
+  padding: 140px 20px;
+
+  background: #ffffff;
+}
+
+.location-subtitle {
+  text-align: center;
+
+  color: #7cb7df;
+
+  letter-spacing: 5px;
+
+  text-transform: uppercase;
+}
+
+.location-title {
+  margin-top: 15px;
+
+  text-align: center;
+
+  font-size: 60px;
+
+  color: var(--title);
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.location-desc {
+  margin: 30px auto 60px;
+
+  max-width: 650px;
+
+  text-align: center;
+
+  line-height: 2;
+}
+
+/*==========================================
+            MAP
+==========================================*/
+
+.location-map {
+  overflow: hidden;
+
+  border-radius: 35px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.location-map iframe {
+  width: 100%;
+
+  height: 500px;
+
+  border: none;
+}
+
+/*==========================================
+            BUTTON
+==========================================*/
+
+.location-button {
+  margin-top: 50px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.location-button a {
+  text-decoration: none;
+
+  background: linear-gradient(135deg, #a9ddfc, #7fc6f3);
+
+  color: white;
+
+  padding: 18px 38px;
+
+  border-radius: 100px;
+
+  transition: 0.35s;
+
+  font-weight: 600;
+}
+
+.location-button a:hover {
+  transform: translateY(-5px);
+}
