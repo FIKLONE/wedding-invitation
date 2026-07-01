@@ -25,7 +25,7 @@
 ==========================================*/
 
 .bg-video {
-  position: fixed;
+  position: absolute;
 
   inset: 0;
 
@@ -35,7 +35,7 @@
 
   object-fit: cover;
 
-  z-index: -3;
+  z-index: -2;
 }
 
 /*==========================================
@@ -43,27 +43,16 @@
 ==========================================*/
 
 .overlay {
-  position: fixed;
+  position: absolute;
 
   inset: 0;
 
   background: linear-gradient(
-    rgba(255, 255, 255, 0.84),
-    rgba(234, 248, 255, 0.82),
-    rgba(255, 255, 255, 0.86)
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.78)
   );
 
-  backdrop-filter: blur(4px);
-
-  -webkit-backdrop-filter: blur(4px);
-
-  transition: opacity 0.8s ease;
-
-  z-index: -2;
-}
-
-.overlay.hide {
-  opacity: 0.25;
+  z-index: -1;
 }
 
 /*==========================================
@@ -72,44 +61,47 @@
 
 #cover {
   position: fixed;
-
   inset: 0;
 
-  width: 100%;
-
-  height: 100vh;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
+
+  overflow: hidden;
+
+  z-index: 9998;
 
   text-align: center;
 
   padding: 30px;
 
-  z-index: 9998;
-
   transition:
-    transform 0.9s ease,
-    opacity 0.9s ease;
+    transform 0.8s ease,
+    opacity 0.8s ease;
 }
-
 /*==========================================
         COVER CONTENT
 ==========================================*/
 
 .cover-content {
-  width: 100%;
+  position: relative;
 
-  max-width: 720px;
+  z-index: 2;
 
-  transition:
-    transform 0.8s ease,
-    opacity 0.8s ease;
+  width: min(92%, 650px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 16px;
 }
-
 /*==========================================
         OPEN ANIMATION
 ==========================================*/
@@ -133,7 +125,7 @@
 ==========================================*/
 
 .bismillah {
-  font-size: 56px;
+  font-size: clamp(36px, 5vw, 56px);
 
   color: var(--title);
 
@@ -145,7 +137,7 @@
 ==========================================*/
 
 .subtitle {
-  font-size: 18px;
+  font-size: clamp(13px, 2vw, 18px);
 
   letter-spacing: 8px;
 
@@ -155,7 +147,6 @@
 
   text-transform: uppercase;
 }
-
 /*==========================================
         NAMA
 ==========================================*/
@@ -164,7 +155,7 @@
 .bride {
   font-family: "Great Vibes", cursive;
 
-  font-size: 108px;
+  font-size: clamp(58px, 9vw, 110px);
 
   font-weight: 400;
 
@@ -190,6 +181,19 @@
 
   color: var(--text);
 }
+.ampersand {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 55px;
+
+  color: #7ec6f3;
+
+  margin: 10px 0;
+}
+
+.fullname {
+  font-size: 17px;
+}
 
 /*==========================================
         DIVIDER
@@ -198,9 +202,11 @@
 .divider {
   width: 130px;
 
+  max-width: 40%;
+
   height: 2px;
 
-  margin: 40px auto;
+  margin: 20px auto;
 
   border-radius: 100px;
 
@@ -212,9 +218,12 @@
 ==========================================*/
 
 .date {
-  margin-top: 10px;
-}
+  display: flex;
 
+  flex-direction: column;
+
+  gap: 8px;
+}
 .date p {
   font-size: 18px;
 
@@ -234,7 +243,13 @@
 ==========================================*/
 
 .guest {
-  margin-top: 55px;
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 18px;
 }
 
 .guest p {
@@ -254,11 +269,11 @@
 ==========================================*/
 
 #openInvitation {
-  width: 260px;
+  width: clamp(210px, 45vw, 260px);
 
-  height: 62px;
+  height: 58px;
 
-  margin-top: 45px;
+  margin-top: 25px;
 
   border: none;
 
@@ -268,7 +283,7 @@
 
   color: white;
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 600;
 
@@ -289,9 +304,9 @@
 ==========================================*/
 
 .scroll {
-  margin-top: 45px;
+  margin-top: 18px;
 
-  font-size: 15px;
+  font-size: 14px;
 
   color: var(--text);
 
@@ -330,135 +345,4 @@
 
 body.lock {
   overflow: hidden;
-}
-
-/*==========================================
-        TABLET
-==========================================*/
-
-@media (max-width: 992px) {
-  .cover-content {
-    max-width: 650px;
-  }
-
-  .groom,
-  .bride {
-    font-size: 88px;
-  }
-
-  .guest h2 {
-    font-size: 36px;
-  }
-}
-
-/*==========================================
-        MOBILE
-==========================================*/
-
-@media (max-width: 768px) {
-  #cover {
-    padding: 25px;
-  }
-
-  .bismillah {
-    font-size: 46px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-
-    letter-spacing: 4px;
-  }
-
-  .groom,
-  .bride {
-    font-size: 64px;
-  }
-
-  .ampersand {
-    font-size: 42px;
-  }
-
-  .fullname {
-    font-size: 15px;
-  }
-
-  .divider {
-    width: 100px;
-
-    margin: 30px auto;
-  }
-
-  .date h2 {
-    font-size: 28px;
-  }
-
-  .guest {
-    margin-top: 40px;
-  }
-
-  .guest h2 {
-    font-size: 30px;
-  }
-
-  #openInvitation {
-    width: 220px;
-
-    height: 56px;
-
-    font-size: 16px;
-
-    margin-top: 35px;
-  }
-
-  .scroll {
-    margin-top: 30px;
-  }
-}
-
-/*==========================================
-        SMALL MOBILE
-==========================================*/
-
-@media (max-width: 430px) {
-  .bismillah {
-    font-size: 38px;
-  }
-
-  .groom,
-  .bride {
-    font-size: 52px;
-
-    line-height: 1.15;
-  }
-
-  .ampersand {
-    font-size: 34px;
-  }
-
-  .fullname {
-    font-size: 14px;
-
-    line-height: 1.7;
-  }
-
-  .date h2 {
-    font-size: 24px;
-  }
-
-  .guest h2 {
-    font-size: 26px;
-  }
-
-  #openInvitation {
-    width: 210px;
-
-    height: 52px;
-
-    font-size: 15px;
-  }
-
-  .scroll {
-    font-size: 13px;
-  }
 }
