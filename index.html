@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/location.css" />
     <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="css/gift.css">
+    <link rel="stylesheet" href="css/rsvp.css">
     <link rel="stylesheet" href="css/story.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/animation.css" />
@@ -463,6 +464,141 @@
   </div>
 </section>
 
+<!-- ==========================
+        RSVP & WISHES
+========================== -->
+
+<section id="rsvp">
+  <div class="container">
+
+    <p class="rsvp-subtitle">RSVP & Wishes</p>
+
+    <h2 class="rsvp-title">Konfirmasi Kehadiran</h2>
+
+    <p class="rsvp-desc">
+      Mohon konfirmasi kehadiran dan berikan doa terbaik untuk kami.
+    </p>
+
+    <!-- FORM -->
+
+    <div class="rsvp-card">
+
+      <form id="rsvpForm">
+
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Masukkan nama"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Jumlah Tamu</label>
+
+          <input
+            type="number"
+            id="guest"
+            min="1"
+            value="1"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Konfirmasi Kehadiran</label>
+
+          <div class="attendance">
+
+            <label>
+              <input
+                type="radio"
+                name="attendance"
+                value="Hadir"
+                checked
+              />
+              Hadir
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="attendance"
+                value="Tidak Hadir"
+              />
+              Tidak Hadir
+            </label>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Ucapan & Doa</label>
+
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Tulis ucapan dan doa..."
+            required
+          ></textarea>
+        </div>
+
+        <button
+  type="submit"
+  class="rsvp-btn"
+  id="submitBtn"
+>
+  Kirim Ucapan
+</button>
+
+      </form>
+
+    </div>
+
+    <!-- COUNTER -->
+
+    <div class="rsvp-counter">
+
+      <div class="counter-card">
+
+        <h3 id="totalHadir">0</h3>
+
+        <span>Hadir</span>
+
+      </div>
+
+      <div class="counter-card">
+
+        <h3 id="totalTidakHadir">0</h3>
+
+        <span>Tidak Hadir</span>
+
+      </div>
+
+      <div class="counter-card">
+
+        <h3 id="totalUcapan">0</h3>
+
+        <span>Ucapan</span>
+
+      </div>
+
+    </div>
+
+    <!-- LIST UCAPAN -->
+
+    <div id="wishList" class="wish-list">
+
+      <!-- otomatis dari Firebase -->
+
+    </div>
+
+  </div>
+</section>
+
 <div class="toast" id="toast">
   Berhasil Disalin ✓
 </div>
@@ -561,15 +697,7 @@
       <source src="assets/audio/lagu.mp3" type="audio/mpeg" />
     </audio>
 
-    <script src="js/script.js"></script>
-
-    <script src="js/countdown.js"></script>
-
-   
-
-    <script src="js/gift.js"></script>
-
-    <script src="js/aos.js"></script>
+    
 
     <div id="galleryViewer" class="gallery-viewer">
       <span class="gallery-close">&times;</span>
@@ -585,21 +713,33 @@
       </button>
     </div>
 
-     <script src="js/gallery.js"></script>
     <div id="galleryViewer" class="gallery-viewer">
-      <button class="gallery-close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+  <button class="gallery-close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
 
-      <button class="gallery-prev">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
+  <button class="gallery-prev">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
 
-      <img id="galleryImage" src="" alt="Gallery" />
+  <img id="galleryImage" src="" alt="Gallery" />
 
-      <button class="gallery-next">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
+  <button class="gallery-next">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="js/script.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/gift.js"></script>
+<script src="js/aos.js"></script>
+
+<!-- Firebase nanti di sini -->
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/rsvp.js"></script>
+
   </body>
 </html>

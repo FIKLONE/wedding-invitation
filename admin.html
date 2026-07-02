@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard Admin RSVP</title>
+
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <!-- ==========================
+            HEADER
+    ========================== -->
+
+    <div class="topbar-right">
+
+    <button id="exportBtn" class="export-btn">
+
+        📥 Export Excel
+
+    </button>
+
+    <button id="logoutBtn" class="logout-btn">
+
+        🚪 Logout
+
+    </button>
+
+</div>
+    </header>
+
+    <!-- ==========================
+            CONTENT
+    ========================== -->
+
+    <main class="container">
+      <!-- STATISTIK -->
+
+      <section class="stats">
+        <div class="card">
+          <h2 id="hadir">0</h2>
+
+          <p>👥 Total Hadir</p>
+        </div>
+
+        <div class="card">
+          <h2 id="tidakHadir">0</h2>
+
+          <p>❌ Tidak Hadir</p>
+        </div>
+
+        <div class="card">
+          <h2 id="ucapan">0</h2>
+
+          <p>💌 Total Ucapan</p>
+        </div>
+      </section>
+
+      <!-- SEARCH -->
+
+      <input type="text" id="search" placeholder="🔍 Cari nama tamu..." />
+
+      <!-- LIST RSVP -->
+
+      <section id="list"></section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>
