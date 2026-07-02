@@ -1,96 +1,156 @@
 /*====================================================
-
-    Wedding Invitation Premium
-    Countdown V2
-
-=====================================================*/
+                COUNTDOWN V2
+====================================================*/
 
 #countdown {
-  padding: 120px 20px;
+  padding: 90px 20px;
 
-  background: #f9fdff;
+  background: linear-gradient(180deg, #ffffff, #f9fcff);
 }
 
-.countdown-wrapper {
-  display: grid;
+#countdown .container {
+  max-width: 1100px;
 
-  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+
+  text-align: center;
+}
+
+/*========================*/
+
+#countdown .section-subtitle {
+  text-transform: uppercase;
+
+  letter-spacing: 6px;
+
+  color: #7ec6f3;
+
+  font-size: 14px;
+}
+
+#countdown .section-title {
+  margin-top: 12px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 64px;
+
+  color: #44637c;
+}
+
+#countdown .section-desc {
+  margin: 25px auto 70px;
+
+  max-width: 700px;
+
+  line-height: 1.8;
+
+  color: #5e788d;
+
+  font-size: 18px;
+}
+
+/*========================*/
+
+.countdown-wrapper {
+  display: flex;
+
+  justify-content: center;
 
   gap: 25px;
 
-  margin-top: 70px;
+  flex-wrap: wrap;
 }
 
-.time-box {
-  background: white;
+/*========================*/
 
-  padding: 40px 20px;
+.time-box {
+  width: 170px;
+
+  padding: 35px 20px;
 
   border-radius: 28px;
 
-  text-align: center;
+  background: rgba(255, 255, 255, 0.45);
 
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
 
   transition: 0.35s;
 }
 
 .time-box:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 
-  box-shadow: 0 25px 50px rgba(127, 198, 243, 0.2);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
 }
+
+/*========================*/
 
 .time-box h3 {
   font-size: 60px;
 
-  color: var(--title);
+  color: #44637c;
 
-  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
 }
 
 .time-box span {
   display: block;
 
-  margin-top: 12px;
+  margin-top: 10px;
 
-  font-size: 16px;
+  color: #5e788d;
 
-  color: var(--text);
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
 }
+
+/*========================*/
+
 @media (max-width: 768px) {
-  .countdown-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  #countdown {
+    padding: 90px 20px;
   }
-}
 
-@media (max-width: 480px) {
+  #countdown .section-title {
+    font-size: 46px;
+  }
+
+  #countdown .section-desc {
+    font-size: 16px;
+  }
+
   .countdown-wrapper {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
-    gap: 18px;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+
+    gap: 10px;
   }
 
   .time-box {
-    padding: 28px 10px;
+    width: 85px;
+
+    padding: 20px 10px;
+
+    border-radius: 20px;
   }
 
   .time-box h3 {
-    font-size: 42px;
+    font-size: 36px;
   }
-}
-#countdown {
-  padding: 90px 20px;
-}
 
-#countdown .section-title {
-  margin-bottom: 15px;
-}
+  .time-box span {
+    font-size: 12px;
 
-#countdown .section-desc {
-  max-width: 500px;
-
-  margin: auto;
-
-  line-height: 1.8;
+    letter-spacing: 1px;
+  }
 }

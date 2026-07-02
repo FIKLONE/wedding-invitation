@@ -1,13 +1,10 @@
-/*====================================================
+/*======================================================
+            COVER V4
+======================================================*/
 
-        Wedding Invitation Premium
-        Cover V3
-
-=====================================================*/
-
-/*==========================================
+/*==============================
         ROOT
-==========================================*/
+==============================*/
 
 :root {
   --primary: #eaf8ff;
@@ -20,17 +17,46 @@
   --white: #ffffff;
 }
 
-/*==========================================
-        VIDEO
-==========================================*/
+/*==============================
+        COVER
+==============================*/
 
-.bg-video {
-  position: absolute;
-
+#cover {
+  position: fixed;
   inset: 0;
 
   width: 100%;
+  height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+
+  padding: 32px 20px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  background: transparent;
+
+  z-index: 9998;
+
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
+}
+
+/*==============================
+        VIDEO
+==============================*/
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
   height: 100%;
 
   object-fit: cover;
@@ -38,13 +64,12 @@
   z-index: -2;
 }
 
-/*==========================================
+/*==============================
         OVERLAY
-==========================================*/
+==============================*/
 
 .overlay {
   position: absolute;
-
   inset: 0;
 
   background: linear-gradient(
@@ -55,56 +80,31 @@
   z-index: -1;
 }
 
-/*==========================================
-        COVER
-==========================================*/
-
-#cover {
-  position: fixed;
-  inset: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  overflow: hidden;
-
-  z-index: 9998;
-
-  text-align: center;
-
-  padding: 30px;
-
-  transition:
-    transform 0.8s ease,
-    opacity 0.8s ease;
-}
-/*==========================================
-        COVER CONTENT
-==========================================*/
+/*==============================
+        CONTENT
+==============================*/
 
 .cover-content {
   position: relative;
 
   z-index: 2;
 
-  width: min(92%, 650px);
+  width: min(92%, 640px);
 
   display: flex;
 
   flex-direction: column;
 
-  align-items: center;
-
   justify-content: center;
 
-  text-align: center;
+  align-items: center;
 
-  gap: 16px;
+  gap: 14px;
 }
-/*==========================================
-        OPEN ANIMATION
-==========================================*/
+
+/*==============================
+        OPEN
+==============================*/
 
 #cover.hide {
   transform: translateY(-100%);
@@ -115,181 +115,161 @@
 }
 
 #cover.hide .cover-content {
-  transform: translateY(-50px);
+  transform: translateY(-40px);
 
   opacity: 0;
-}
 
-/*==========================================
+  transition: 0.6s;
+}
+/*==============================
         BISMILLAH
-==========================================*/
+==============================*/
 
 .bismillah {
-  font-size: clamp(36px, 5vw, 56px);
+  font-size: clamp(34px, 4vw, 52px);
 
   color: var(--title);
 
-  margin-bottom: 22px;
+  margin: 0;
 }
 
-/*==========================================
+/*==============================
         SUBTITLE
-==========================================*/
+==============================*/
 
 .subtitle {
-  font-size: clamp(13px, 2vw, 18px);
+  font-size: clamp(13px, 1.2vw, 16px);
 
-  letter-spacing: 8px;
-
-  color: #78b7e7;
-
-  margin-bottom: 28px;
+  letter-spacing: 6px;
 
   text-transform: uppercase;
+
+  color: #7ec6f3;
+
+  margin: 0;
 }
-/*==========================================
+
+/*==============================
         NAMA
-==========================================*/
+==============================*/
 
 .groom,
 .bride {
   font-family: "Great Vibes", cursive;
 
-  font-size: clamp(58px, 9vw, 110px);
+  font-size: clamp(54px, 6vw, 88px);
 
   font-weight: 400;
 
   color: var(--title);
 
-  line-height: 1.1;
+  line-height: 1;
+
+  margin: 0;
 }
 
 .ampersand {
   font-family: "Cormorant Garamond", serif;
 
-  font-size: 55px;
+  font-size: 42px;
 
   color: #7ec6f3;
 
-  margin: 10px 0;
+  margin: 0;
 }
 
 .fullname {
-  margin-top: 15px;
-
-  font-size: 17px;
+  font-size: 16px;
 
   color: var(--text);
-}
-.ampersand {
-  font-family: "Cormorant Garamond", serif;
 
-  font-size: 55px;
+  line-height: 1.6;
 
-  color: #7ec6f3;
-
-  margin: 10px 0;
+  margin: 0;
 }
 
-.fullname {
-  font-size: 17px;
-}
-
-/*==========================================
+/*==============================
         DIVIDER
-==========================================*/
+==============================*/
 
-.divider {
-  width: 130px;
-
-  max-width: 40%;
-
-  height: 2px;
-
-  margin: 20px auto;
-
-  border-radius: 100px;
-
-  background: #a9ddfc;
-}
-
-/*==========================================
+/*==============================
         DATE
-==========================================*/
+==============================*/
 
 .date {
   display: flex;
 
   flex-direction: column;
 
-  gap: 8px;
+  gap: 4px;
 }
-.date p {
-  font-size: 18px;
 
-  margin-bottom: 10px;
+.date p {
+  margin: 0;
+
+  font-size: 16px;
 }
 
 .date h2 {
+  margin: 0;
+
   font-family: "Cormorant Garamond", serif;
 
-  font-size: 34px;
+  font-size: 30px;
 
   color: var(--title);
 }
 
-/*==========================================
+/*==============================
         GUEST
-==========================================*/
+==============================*/
 
 .guest {
   display: flex;
 
   flex-direction: column;
 
-  gap: 10px;
-
-  margin-top: 18px;
+  gap: 6px;
 }
 
 .guest p {
-  font-size: 17px;
+  margin: 0;
+
+  font-size: 16px;
 }
 
 .guest h2 {
-  margin-top: 10px;
+  margin: 0;
 
-  font-size: 42px;
+  font-size: 34px;
 
   color: var(--title);
 }
-
-/*==========================================
+/*==============================
         BUTTON
-==========================================*/
+==============================*/
 
 #openInvitation {
-  width: clamp(210px, 45vw, 260px);
+  width: 240px;
 
   height: 58px;
-
-  margin-top: 25px;
+  margin-top: 15px;
 
   border: none;
 
-  border-radius: 100px;
-
-  cursor: pointer;
-
-  color: white;
-
-  font-size: 16px;
-
-  font-weight: 600;
+  border-radius: 999px;
 
   background: linear-gradient(135deg, #a9ddfc, #7fc6f3);
 
-  box-shadow: 0 18px 40px rgba(127, 198, 243, 0.35);
+  color: #fff;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 35px rgba(127, 198, 243, 0.35);
 
   transition: 0.35s;
 }
@@ -297,52 +277,79 @@
 #openInvitation:hover {
   transform: translateY(-5px);
 
-  box-shadow: 0 25px 50px rgba(127, 198, 243, 0.45);
+  box-shadow: 0 20px 40px rgba(127, 198, 243, 0.45);
 }
-/*==========================================
-        SCROLL INDICATOR
-==========================================*/
+
+/*==============================
+        SCROLL
+==============================*/
 
 .scroll {
-  margin-top: 18px;
-
   font-size: 14px;
 
   color: var(--text);
 
-  animation: float 2s ease-in-out infinite;
+  animation: float 2s infinite;
 }
 
 .scroll i {
   display: block;
 
-  margin-top: 10px;
+  margin-top: 8px;
 
   font-size: 22px;
 }
 
-/*==========================================
-        FLOAT ANIMATION
-==========================================*/
+/*==============================
+        ANIMATION
+==============================*/
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(8px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
 
-/*==========================================
-        BODY LOCK
-==========================================*/
+/*==============================
+        RESPONSIVE
+==============================*/
 
-body.lock {
-  overflow: hidden;
+@media (max-width: 768px) {
+  .cover-content {
+    gap: 12px;
+    padding-top: 60px;
+  }
+
+  .groom,
+  .bride {
+    font-size: 58px;
+  }
+
+  .guest h2 {
+    font-size: 28px;
+  }
+
+  .date h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cover-content {
+    width: 95%;
+  }
+
+  .subtitle {
+    letter-spacing: 4px;
+  }
+
+  .bismillah {
+    font-size: 38px;
+  }
 }
