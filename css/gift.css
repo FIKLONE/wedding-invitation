@@ -1,0 +1,171 @@
+/*====================================================
+                    WEDDING GIFT
+====================================================*/
+
+#gift {
+  padding: 100px 20px;
+  background: #fff;
+}
+
+#gift .container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.gift-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #7ec6f3;
+  font-size: 14px;
+}
+
+.gift-title {
+  margin-top: 12px;
+  font-size: 64px;
+  color: #44637c;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.gift-desc {
+  max-width: 650px;
+  margin: 25px auto 70px;
+  line-height: 1.8;
+  color: #5e788d;
+  font-size: 18px;
+}
+
+.gift-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.gift-card {
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  transition: 0.35s;
+}
+
+.gift-card:hover {
+  transform: translateY(-8px);
+}
+
+.gift-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  background: #eef8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.gift-card h3 {
+  margin-top: 20px;
+  color: #44637c;
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.gift-name {
+  margin-top: 12px;
+  color: #5e788d;
+}
+
+.gift-card h4 {
+  margin: 20px 0;
+  font-size: 28px;
+  color: #44637c;
+  letter-spacing: 2px;
+}
+
+.copy-btn,
+.copy-address {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  background: #7ec6f3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.copy-btn:hover,
+.copy-address:hover {
+  background: #5db4ec;
+}
+
+.gift-address {
+  margin-top: 50px;
+  padding: 45px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.gift-address h3 {
+  font-size: 32px;
+  color: #44637c;
+  margin-bottom: 25px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.gift-address p {
+  line-height: 2;
+  color: #5e788d;
+  margin-bottom: 30px;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  background: #44637c;
+  color: #fff;
+  padding: 15px 28px;
+  border-radius: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+  z-index: 999999;
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .gift-title {
+    font-size: 48px;
+  }
+
+  .gift-desc {
+    font-size: 16px;
+  }
+
+  .gift-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gift-card {
+    padding: 35px 25px;
+  }
+
+  .gift-card h4 {
+    font-size: 22px;
+    word-break: break-all;
+  }
+
+  .gift-address {
+    padding: 35px 25px;
+  }
+}

@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/countdown.css" />
     <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/location.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/gift.css">
     <link rel="stylesheet" href="css/story.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/animation.css" />
@@ -244,7 +246,11 @@
         </div>
       </div>
     </section>
-    <!-- ==========================
+ 
+    </section>
+
+   
+   <!-- ==========================
         LOCATION
 ========================== -->
 
@@ -287,9 +293,180 @@
       </div>
     </section>
 
-    <!-- ==========================
-        LOVE STORY
-========================== -->
+    <section id="gallery">
+      <div class="container">
+        <p class="gallery-subtitle">Our Gallery</p>
+
+        <h2 class="gallery-title">Pre Wedding Gallery</h2>
+
+        <p class="gallery-desc">
+          Beberapa momen indah yang menjadi bagian dari perjalanan cinta kami.
+        </p>
+
+        <div class="gallery-grid">
+          <a
+            href="assets/img/gallery1.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery1.jpg" loading="lazy" alt="Gallery 1" />
+          </a>
+
+          <a
+            href="assets/img/gallery2.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery2.jpg" loading="lazy" alt="Gallery 2" />
+          </a>
+
+          <a
+            href="assets/img/gallery3.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery3.jpg" loading="lazy" alt="Gallery 3" />
+          </a>
+
+          <a
+            href="assets/img/gallery4.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery4.jpg" loading="lazy" alt="Gallery 4" />
+          </a>
+
+          <a
+            href="assets/img/gallery5.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery5.jpg" loading="lazy" alt="Gallery 5" />
+          </a>
+
+          <a
+            href="assets/img/gallery6.jpg"
+            class="gallery-item"
+            data-aos="zoom-in"
+          >
+            <img src="assets/img/gallery6.jpg" loading="lazy" alt="Gallery 6" />
+          </a>
+        </div>
+      </div>
+      </section>
+
+      <section id="gift">
+  <div class="container">
+
+    <p class="gift-subtitle">Wedding Gift</p>
+
+    <h2 class="gift-title">
+      Tanda Kasih
+    </h2>
+
+    <p class="gift-desc">
+      Doa restu Anda merupakan hadiah terindah bagi kami.
+      Namun apabila ingin memberikan tanda kasih, dapat melalui
+      rekening ataupun alamat berikut.
+    </p>
+
+    <div class="gift-wrapper">
+
+      <!-- BCA -->
+
+      <div class="gift-card">
+
+        <div class="gift-icon">
+          🏦
+        </div>
+
+        <h3>BCA</h3>
+
+        <p class="gift-name">
+          Rival Maulana
+        </p>
+
+        <h4 id="bcaNumber">
+          2312951232
+        </h4>
+
+        <button
+          class="copy-btn"
+          data-copy="2312951232"
+        >
+          Copy Rekening
+        </button>
+
+      </div>
+
+      <!-- BRI -->
+
+      <div class="gift-card">
+
+        <div class="gift-icon">
+          🏦
+        </div>
+
+        <h3>BRI</h3>
+
+        <p class="gift-name">
+          Niesha Rachmalia
+        </p>
+
+        <h4 id="briNumber">
+          325901048971536
+        </h4>
+
+        <button
+          class="copy-btn"
+          data-copy="325901048971536"
+        >
+          Copy Rekening
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Kirim Hadiah -->
+
+    <div class="gift-address">
+
+      <h3>
+        📦 Kirim Hadiah
+      </h3>
+
+      <p id="giftAddress">
+        Kp. Cijengkol RT 24 RW 12,
+        Kecamatan Ciasem,
+        Kabupaten Subang,
+        Jawa Barat 41256.
+        <br><br>
+
+        <strong>
+          Pabrik Tahu Hj. Encep Gunawan
+        </strong>
+
+        <br>
+
+        Datangnya ke Warung Kurnia.
+      </p>
+
+      <button
+        class="copy-address"
+      >
+        Copy Alamat
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="toast" id="toast">
+  Berhasil Disalin ✓
+</div>
+
 
     <section id="story">
       <div class="container">
@@ -385,8 +562,44 @@
     </audio>
 
     <script src="js/script.js"></script>
+
     <script src="js/countdown.js"></script>
-    <script src="js/gallery.js"></script>
+
+   
+
+    <script src="js/gift.js"></script>
+
     <script src="js/aos.js"></script>
+
+    <div id="galleryViewer" class="gallery-viewer">
+      <span class="gallery-close">&times;</span>
+
+      <img id="galleryImage" src="" alt="" />
+
+      <button class="gallery-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="gallery-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+     <script src="js/gallery.js"></script>
+    <div id="galleryViewer" class="gallery-viewer">
+      <button class="gallery-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <button class="gallery-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <img id="galleryImage" src="" alt="Gallery" />
+
+      <button class="gallery-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
   </body>
 </html>
