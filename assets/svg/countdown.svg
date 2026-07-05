@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none">
+
+    <!-- Atas -->
+    <path
+        d="M7 4H17"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+    <!-- Bawah -->
+    <path
+        d="M7 20H17"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+    <!-- Bingkai kiri -->
+    <path
+        d="M8 4
+           C8 8 10.5 9.5 12 12
+           C10.5 14.5 8 16 8 20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Bingkai kanan -->
+    <path
+        d="M16 4
+           C16 8 13.5 9.5 12 12
+           C13.5 14.5 16 16 16 20"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Pasir atas -->
+    <path
+        d="M10 7H14L12 9.5Z"
+        fill="currentColor"/>
+
+    <!-- Pasir bawah -->
+    <path
+        d="M10 17H14L12 14.5Z"
+        fill="currentColor"/>
+
+    <!-- Butiran pasir -->
+    <circle
+        cx="12"
+        cy="12"
+        r="0.8"
+        fill="currentColor"/>
+
+</svg>

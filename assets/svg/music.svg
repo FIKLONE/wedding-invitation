@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="none">
+
+    <!-- Stem Besar -->
+    <path
+        d="M14 5V15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+    <!-- Stem Kecil -->
+    <path
+        d="M18 7V17"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+    <!-- Beam -->
+    <path
+        d="M14 5L18 7"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- Note Besar -->
+    <circle
+        cx="12"
+        cy="17"
+        r="2.5"
+        stroke="currentColor"
+        stroke-width="2"/>
+
+    <!-- Note Kecil -->
+    <circle
+        cx="18"
+        cy="19"
+        r="2"
+        stroke="currentColor"
+        stroke-width="2"/>
+
+</svg>
