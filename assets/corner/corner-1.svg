@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180"
+     height="180"
+     viewBox="0 0 180 180"
+     fill="none">
+
+    <!-- Main Stem -->
+    <path
+        d="M20 160
+           C25 120 40 80 75 45
+           C95 25 120 15 155 20"
+        stroke="#4A6785"
+        stroke-width="2"
+        stroke-linecap="round"
+        fill="none"/>
+
+    <!-- Leaf 1 -->
+    <path
+        d="
+        M58 105
+        C45 95 43 78 58 70
+        C72 78 70 95 58 105Z"
+        fill="#7FA1C5"/>
+
+    <!-- Leaf 2 -->
+    <path
+        d="
+        M82 72
+        C72 62 70 46 84 38
+        C97 46 95 62 82 72Z"
+        fill="#7FA1C5"/>
+
+    <!-- Flower Center -->
+    <circle
+        cx="112"
+        cy="48"
+        r="5"
+        fill="#C7A878"/>
+
+    <!-- Petal Top -->
+    <path
+        d="
+        M112 28
+        C106 35 106 42 112 46
+        C118 42 118 35 112 28Z"
+        fill="#C7A878"/>
+
+    <!-- Petal Left -->
+    <path
+        d="
+        M95 48
+        C101 43 107 43 112 48
+        C107 53 101 53 95 48Z"
+        fill="#C7A878"/>
+
+    <!-- Petal Right -->
+    <path
+        d="
+        M129 48
+        C123 43 117 43 112 48
+        C117 53 123 53 129 48Z"
+        fill="#C7A878"/>
+
+    <!-- Petal Bottom -->
+    <path
+        d="
+        M112 68
+        C106 61 106 54 112 50
+        C118 54 118 61 112 68Z"
+        fill="#C7A878"/>
+
+    <!-- Gold Dots -->
+    <circle cx="136" cy="28" r="2.5" fill="#C7A878"/>
+    <circle cx="145" cy="40" r="2.5" fill="#C7A878"/>
+    <circle cx="150" cy="55" r="2.5" fill="#C7A878"/>
+
+</svg>
