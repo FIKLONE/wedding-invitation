@@ -3,9 +3,8 @@
 ====================================================*/
 
 #countdown {
-  padding: 90px 20px;
-
-  background: linear-gradient(180deg, #ffffff, #f9fcff);
+  padding: 70px 20px;
+  background: #ffffff;
 }
 
 #countdown .container {

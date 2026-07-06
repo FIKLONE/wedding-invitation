@@ -269,9 +269,7 @@ section {
 
 .section-divider {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 
   margin: 90px auto;
@@ -279,20 +277,17 @@ section {
   pointer-events: none;
 }
 
-.section-divider img {
-  width: 280px;
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  opacity: 0.75;
-
-  transition: 0.5s;
-}
-
-.section-divider.aos-animate img {
-  opacity: 1;
-
-  transform: translateY(0);
+  margin: 30px auto 45px;
 }
 
 .section-divider img {
-  transform: translateY(20px);
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  display: block;
 }

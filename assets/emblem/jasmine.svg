@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180"
+     height="180"
+     viewBox="0 0 180 180"
+     fill="none">
+
+    <!-- Outer Circle -->
+    <circle
+        cx="90"
+        cy="90"
+        r="72"
+        stroke="#4A6785"
+        stroke-width="2"
+        opacity=".18"/>
+
+    <!-- Petal Top -->
+    <ellipse
+        cx="90"
+        cy="63"
+        rx="12"
+        ry="24"
+        fill="#C7A878"/>
+
+    <!-- Petal Bottom -->
+    <ellipse
+        cx="90"
+        cy="117"
+        rx="12"
+        ry="24"
+        fill="#C7A878"/>
+
+    <!-- Petal Left -->
+    <ellipse
+        cx="63"
+        cy="90"
+        rx="24"
+        ry="12"
+        fill="#C7A878"/>
+
+    <!-- Petal Right -->
+    <ellipse
+        cx="117"
+        cy="90"
+        rx="24"
+        ry="12"
+        fill="#C7A878"/>
+
+    <!-- Center -->
+    <circle
+        cx="90"
+        cy="90"
+        r="10"
+        fill="#4A6785"/>
+
+    <!-- Leaf Left -->
+    <path
+        d="
+        M48 132
+        C60 118 74 118 82 128
+        C70 142 56 142 48 132Z"
+        fill="#7FA1C5"/>
+
+    <!-- Leaf Right -->
+    <path
+        d="
+        M132 132
+        C120 118 106 118 98 128
+        C110 142 124 142 132 132Z"
+        fill="#7FA1C5"/>
+
+</svg>

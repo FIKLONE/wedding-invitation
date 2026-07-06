@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="800"
+     height="100"
+     viewBox="0 0 800 100"
+     fill="none">
+
+    <!-- LEFT LINE -->
+    <line
+        x1="30"
+        y1="50"
+        x2="250"
+        y2="50"
+        stroke="#4A6785"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        opacity=".18"/>
+
+    <!-- RIGHT LINE -->
+    <line
+        x1="550"
+        y1="50"
+        x2="770"
+        y2="50"
+        stroke="#4A6785"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        opacity=".18"/>
+
+    <!-- GOLD DOTS -->
+    <circle cx="90" cy="50" r="3" fill="#C7A878"/>
+    <circle cx="710" cy="50" r="3" fill="#C7A878"/>
+
+    <!-- LEFT STEM -->
+    <path
+        d="M305 50
+           C320 42 332 42 340 50"
+        stroke="#4A6785"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+
+    <!-- RIGHT STEM -->
+    <path
+        d="M495 50
+           C480 42 468 42 460 50"
+        stroke="#4A6785"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+
+    <!-- LEFT LEAF -->
+    <path
+        d="M338 50
+           C326 37 312 37 305 50
+           C312 63 326 63 338 50Z"
+        fill="#7FA1C5"/>
+
+    <!-- RIGHT LEAF -->
+    <path
+        d="M462 50
+           C474 37 488 37 495 50
+           C488 63 474 63 462 50Z"
+        fill="#7FA1C5"/>
+
+    <!-- TOP PETAL -->
+    <path
+        d="M400 26
+           C391 34 392 44 400 49
+           C408 44 409 34 400 26Z"
+        fill="#C7A878"/>
+
+    <!-- LEFT PETAL -->
+    <path
+        d="M383 41
+           C389 44 392 49 396 54
+           C387 54 381 50 378 44Z"
+        fill="#C7A878"/>
+
+    <!-- RIGHT PETAL -->
+    <path
+        d="M417 41
+           C411 44 408 49 404 54
+           C413 54 419 50 422 44Z"
+        fill="#C7A878"/>
+
+    <!-- BOTTOM PETAL -->
+    <path
+        d="M400 74
+           C392 66 392 56 400 51
+           C408 56 408 66 400 74Z"
+        fill="#C7A878"/>
+
+    <!-- CENTER -->
+    <circle
+        cx="400"
+        cy="50"
+        r="4.5"
+        fill="#4A6785"/>
+
+</svg>

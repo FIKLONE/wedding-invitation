@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180"
+     height="180"
+     viewBox="0 0 180 180"
+     fill="none">
+
+    <!-- Outer Circle -->
+    <circle
+        cx="90"
+        cy="90"
+        r="72"
+        stroke="#4A6785"
+        stroke-width="2"
+        opacity=".18"/>
+
+    <!-- Left Leaf -->
+    <path
+        d="
+        M90 90
+        C72 70 48 68 42 90
+        C48 112 72 110 90 90Z"
+        fill="#7FA1C5"/>
+
+    <!-- Right Leaf -->
+    <path
+        d="
+        M90 90
+        C108 70 132 68 138 90
+        C132 112 108 110 90 90Z"
+        fill="#7FA1C5"/>
+
+    <!-- Center Flower -->
+    <circle
+        cx="90"
+        cy="90"
+        r="7"
+        fill="#C7A878"/>
+
+    <circle cx="90" cy="77" r="3.2" fill="#C7A878"/>
+    <circle cx="103" cy="90" r="3.2" fill="#C7A878"/>
+    <circle cx="90" cy="103" r="3.2" fill="#C7A878"/>
+    <circle cx="77" cy="90" r="3.2" fill="#C7A878"/>
+
+</svg>
